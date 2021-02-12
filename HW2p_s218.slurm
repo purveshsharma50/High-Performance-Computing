@@ -1,5 +1,5 @@
 #!/bin/bash -l
-#SBATCH --job-name=HW2-p_s218	    	 # Job name
+#SBATCH --job-name=.         	    	 # Job name
 #SBATCH --time=15-10:40:00                # Time limit days-hrs:min:sec
 #SBATCH --partition=shared		 # Check partitions on the Wiki
 #SBATCH --mem=30Gb			 # Memory size
@@ -11,7 +11,7 @@
 module load intel/18
 
 # Go to directory
-cd /gpfs/home/p_s218/hpc/hw2
+cd /gpfs/home/
 
 # compiles program
 icc -o HW2p_s218 HW2p_s218.cpp
