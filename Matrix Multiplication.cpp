@@ -1,6 +1,4 @@
 // Name- Purvesh Sharma
-//EE5321- Home work2
-
 
 #include<iostream>
 #include <cstdlib>
