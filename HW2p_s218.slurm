@@ -1,10 +1,10 @@
 #!/bin/bash -l
-#SBATCH --job-name=.         	    	 # Job name
+#SBATCH --job-name=Matrix Multiplication         	    	 # Job name
 #SBATCH --time=15-10:40:00                # Time limit days-hrs:min:sec
 #SBATCH --partition=shared		 # Check partitions on the Wiki
 #SBATCH --mem=30Gb			 # Memory size
 #SBATCH -n 1				 # Number of processors in the node
-#SBATCH --mail-user=p_s218@txstate.edu	 # Email me!
+#SBATCH --mail-user=	 # Email me!
 #SBATCH --mail-type=end,begin		 # Types of Emails (Start,End)
 
 # Load Module
@@ -14,10 +14,10 @@ module load intel/18
 cd /gpfs/home/
 
 # compiles program
-icc -o HW2p_s218 HW2p_s218.cpp
+icc -o Matrix Multiplication Matrix Multiplication.cpp
 
 # execute program
-./HW2p_s218 > hw2final.txt
+./Matrix Multiplication > Matrix Multiplication.txt
 
 # Unload module
 module unload intel/18
